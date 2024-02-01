@@ -9,7 +9,9 @@
  * 
  * Ejemplo:
  * 2000 es bisiesto
- * 800 no es bisiesto
+ * 800 es bisiesto
+ * 1900 no es bisiesto
+ * 100 no es bisiesto
  * 2023 no es bisiesto
  *
 */
