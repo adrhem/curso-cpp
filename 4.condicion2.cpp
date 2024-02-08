@@ -1,4 +1,4 @@
-// Compilar y ejecutar: g++ .\condicion2.cpp && .\a.exe
+// Compilar y ejecutar: g++ .\4.condicion2.cpp && .\a.exe
 
 /**
  * Realizar un programa que te pida el año y 
