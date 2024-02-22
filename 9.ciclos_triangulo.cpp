@@ -2,7 +2,7 @@
 
 int main() {
 
-    int j,lado = 5;
+    int lado = 5;
     std::string figura = "*";
     
     /**
@@ -15,10 +15,13 @@ int main() {
         ****
         ***** 
     */
-    for (int j = 0; j < lado ; j++) {
-        std::cout <<figura std::endl;
+    for (int i = 0; i < lado ; i++) {
+        for (int j = 0; j <= i ; j++) {
+            // std::cout << "i:" << i << " j:" << j << std::endl;
+            std::cout << "*";
+        }
+        std::cout << std::endl;
     }
-
 
     return 0;
 }
