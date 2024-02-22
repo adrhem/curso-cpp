@@ -2,9 +2,9 @@
 
 int main() {
 
-    int lado = 5;
+    int j,lado = 5;
     std::string figura = "*";
-
+    
     /**
         Imprimir un triángulo rectangulo usando la variable lado.
 
@@ -15,6 +15,10 @@ int main() {
         ****
         ***** 
     */
+    for (int j = 0; j < lado ; j++) {
+        std::cout <<figura std::endl;
+    }
+
 
     return 0;
 }
