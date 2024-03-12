@@ -28,19 +28,29 @@ int main() {
 std::vector<int> pedirDatos(std::vector<int> nuevo) {
     std::string color;
     for (int i = 1 ; i <= CANTIDAD_TIROS; i++) {
-        std::cout << "Color de ronda " << i << ":";
-        // std::cin >> nuevo[i-1];
-        
-        // Pedir cadena (string) del color y dependiendo del color
-        // asignar valor específico
-        // No hace falta validar colores no existentes.
-        /**
-            amarillo 10 
-            rojo 8
-            azul 6
-            negro 3
-            afuera 0
-        */
+        std::cout << "Color de ronda " << i << std::endl;
+        std::cout << "amarillo: 10" << std::endl;
+        std::cout << "rojo: 8" << std::endl;
+        std::cout << "azul: 6" << std::endl;
+        std::cout << "negro: 3" << std::endl;
+        std::cout << "afuera: 0" << std::endl;
+
+        std::getline(std::cin, color);
+
+        if (color.compare("amarillo") == 0) {
+            nuevo[i-1] = 10;
+        } else if (color.compare("rojo") == 0) {
+            nuevo[i-1] = 8;
+        } else if (color.compare("azul") == 0) {
+            nuevo[i-1] = 6;
+        } else if (color.compare("negro") == 0) {
+            nuevo[i-1] = 3;
+        } else if (color.compare("afuera") == 0) {
+            nuevo[i-1] = 0;
+        } else {
+            std::cout << "No es una opción válida";\
+            i--;
+        }
     }
     
     return nuevo;
