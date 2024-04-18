@@ -6,7 +6,9 @@ struct Auto {
     std::string marca;
 };
 
+// Paso por valor
 void imprimirAuto(Auto automovil);
+// Paso por referencia
 void capturaAuto(int numero, Auto *automovil);
 
 int main () {
